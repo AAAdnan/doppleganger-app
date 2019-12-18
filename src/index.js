@@ -5,7 +5,7 @@ import * as serviceWorker from './serviceWorker';
 
 import { Redirect, Route, Switch } from 'react-router';
 import { Router } from 'react-router-dom';
-import createBrowserHistory from 'history/createBrowserHistory';
+import { createBrowserHistory } from 'history';
 
 import Login from './features/Login';
 import Home from './features/Home';

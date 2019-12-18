@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-var config = {
+const config = {
     apiKey: "AIzaSyDBa4QH0jhqg_vroer6LNKuWoFWPy8O71Y",
     authDomain: "doppleganger-66304.firebaseapp.com",
     databaseURL: "https://doppleganger-66304.firebaseio.com",
@@ -12,6 +12,7 @@ var config = {
   };
 
 firebase.initializeApp(config);
+
 export const googleProvider = new firebase.auth.GoogleAuthProvider();
 export const firebaseAuth = firebase.auth;
 export const db = firebase.firestore().settings({ timestampsInSnapshots: true });
